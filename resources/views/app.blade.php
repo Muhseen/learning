@@ -9,14 +9,25 @@
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
+        <link rel = "stylesheet" href="/css/app.css">
 
         <!-- Scripts -->
         @routes
         @viteReactRefresh
+        @vit ('ressources/css/app.css')
         @vite(['resources/js/app.tsx', "resources/js/Pages/{$page['component']}.tsx"])
+
         @inertiaHead
     </head>
     <body class="font-sans antialiased">
         @inertia
+
+        <div class = "content">
+            <div class="title m-b-md bg-blue-500">
+
+            </div>
+        </div>
+
+
     </body>
 </html>
